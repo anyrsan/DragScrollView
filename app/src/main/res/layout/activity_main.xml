@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+
+    <any.dragsrcollview.widget.DragScrollView
+        android:id="@+id/am_dragscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- top layout -->
+            <include layout="@layout/drag_top_layout" />
+            <!-- bottom layout -->
+            <include layout="@layout/drag_bottom_layout" />
+
+        </LinearLayout>
+
+    </any.dragsrcollview.widget.DragScrollView>
+
+
+    <include layout="@layout/common_top_layout" />
+
+</FrameLayout>
